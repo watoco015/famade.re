@@ -21,7 +21,7 @@
       <div class="nav">
         <div class="nav__right">
           <%= link_to "name", root_path, class: :nav__btn %>
-          <%= link_to "投稿", root_path, class: :nav__btn %>
+          <%= link_to "投稿", new_art_path, class: :nav__btn %>
           <%= link_to "ログアウト", root_path, class: :nav__btn %>
         </div>
       </div>
@@ -29,8 +29,9 @@
 
     <%= yield %>
 
+    </body>
     <footer class="footer">
       2023 faMade
     </footer>
-  </body>
+
 </html>

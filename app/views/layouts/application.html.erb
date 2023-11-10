@@ -8,12 +8,14 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 
   </head>
 
   <body>
     <header class="header">
       <div class="head_logo">
+        <%= link_to image_tag("faMade5.png", class: :logo), root_path %>
       </div>
 
       <div class="nav">
@@ -23,10 +25,9 @@
           <%= link_to "ログアウト", root_path, class: :nav__btn %>
         </div>
       </div>
+    </header>
 
     <%= yield %>
-
-    </header>
 
     <footer class="footer">
       2023 faMade

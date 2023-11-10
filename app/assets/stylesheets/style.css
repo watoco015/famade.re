@@ -1,0 +1,71 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c";
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
+
+/* ヘッダー フッター*/
+
+.header{
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 15vh;
+}
+
+.head_logo{
+  width: 200px;
+}
+
+.nav__btn{
+  padding: 5px 10px;
+  font-size: 22px;
+  color: #3c3c3c;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s ease; 
+}
+
+.nav__btn:hover{
+border-bottom: 2px solid #d05b12;
+}
+
+.footer{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: #d05b12;
+  font-size: 12px;
+}

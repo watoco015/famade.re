@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FamadeRe</title>
+    <title>Famade</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
   </head>
 
   <body>
+    <header class="header">
+      <div class="head_logo">
+        <%= link_to image_tag("faMade5.png", class: :logo), root_path %>
+      </div>
+
+      <div class="nav">
+        <div class="nav__right">
+          <%= link_to "name", root_path, class: :nav__btn %>
+          <%= link_to "投稿", root_path, class: :nav__btn %>
+          <%= link_to "ログアウト", root_path, class: :nav__btn %>
+        </div>
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer class="footer">
+      2023 faMade
+    </footer>
   </body>
 </html>

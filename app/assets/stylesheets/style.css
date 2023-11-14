@@ -49,19 +49,22 @@ a {
 /* ヘッダー フッター*/
 
 .header{
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  padding: 15px 20px;
 }
 
 .head_logo{
   width: 200px;
 }
 
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .nav__btn{
-  padding: 5px 10px;
-  font-size: 22px;
+  padding: 0 13px;
+  font-size: 23px;
   color: #3c3c3c;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.4s ease; 
@@ -76,7 +79,8 @@ border-bottom: 2px solid #d05b12;
   width: 100vw;
   bottom: 0;
   text-align: center;
-  color: #d05b12;
+  color: #ffffff;
+  background-color: #c57949;
   font-size: 12px;
 }
 

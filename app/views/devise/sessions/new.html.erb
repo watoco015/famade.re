@@ -1,16 +1,16 @@
 <div class="main">
   <div class="inner">
 
-    <div class="signin_form">
+    <div class="form">
       <h2 class="user-heading">ユーザー ログイン</h2>
         <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
-        <div class="user_form">
+        <div class="form_content">
           <%= f.label :email, "メールアドレス" %><br />
           <%= f.email_field :email, class: :form_area, rows: "1", autofocus: true, autocomplete: "email" %>
         </div>
 
-        <div class="user_form">
+        <div class="form_content">
           <%= f.label :password, "パスワード（6文字以上）" %><br />
           <%= f.password_field :password, class: :form_area, rows: "1", autocomplete: "current-password" %>
         </div>

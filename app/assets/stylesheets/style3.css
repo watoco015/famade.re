@@ -1,0 +1,19 @@
+.top_second{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 0 50px;
+}
+
+.top_art__first{
+  padding: 30px;
+
+}
+.top__img{
+  width: 550px;
+}
+
+.top__user{
+  font-size: 30px;
+}
+

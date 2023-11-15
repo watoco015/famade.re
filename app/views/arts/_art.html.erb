@@ -1,0 +1,18 @@
+<div class="top_art">
+  <div class="top_art__first">
+
+    <div class="top_art__second">
+      <% if art.image.attached? %>
+      <div class="top_art__name">
+        <%= link_to "by #{art.user.nickname}" , art_path(art), class: :top__user %>
+      </div>
+      <div class="top_art__img">
+        <%= link_to art_path(art) do %>
+          <%= image_tag(art.image, class: :top__img) %>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>

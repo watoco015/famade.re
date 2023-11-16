@@ -1,0 +1,29 @@
+<main class="main">
+  <div class="inner">
+
+    <div class="detail_first">
+      <div class="detail_second">
+
+        <div class="detail_third">
+          <p class="detail_hedding">
+            <%= @art.title %>
+          </p>
+        </div>
+
+        <div class="detail__images">
+          <%= image_tag @art.image ,class: :detail_image %>
+        </div>
+
+        <div class="detail_third">
+          <p class="detail_content">
+            <%= @art.content %>
+          </p>
+        </div>
+        <%= link_to "by #{@art.user.nickname}",root_path,class: :detail_name %>
+
+      </div>
+    </div>
+
+
+  </div>
+</main>

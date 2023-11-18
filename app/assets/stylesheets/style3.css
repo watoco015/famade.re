@@ -69,3 +69,7 @@ li:hover{
   display: flex;
   flex-wrap: wrap;
 }
+
+.edit_first{
+  text-align: center;
+}

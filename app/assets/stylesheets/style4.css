@@ -1,1 +1,19 @@
 /* コメント */
+.detail_comment{
+  padding-top: 100px;
+}
+
+.detail_comments{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.comment_list{
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.comments__name {
+  color: #bc4c06;
+  font-size: 20px;
+}

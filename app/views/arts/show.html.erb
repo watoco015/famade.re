@@ -33,8 +33,32 @@
         <%= link_to "by #{@art.user.nickname}",user_path(@art.user),class: :detail_name %>
 
       </div>
-    </div>
 
+      <div class="detail_comment">
+      <% if user_signed_in? %>
+        <%= form_with(model: [@art, @comment], local: true) do |f| %>
+          <%= f.text_area :text, placeholder: "コメントする",rows: "3", class: :form_area %>
+
+          <div class="action">
+            <%= f.submit "SEND" , class: :form__btn%>
+          </div>
+        <% end %>
+      <% else %>
+        <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+      <% end %>
+
+       <div class="detail_comments">
+        <h2 class="detail_comments__head">コメント一覧</h2>
+          <% @comments.each do |comment| %>
+          <div class="comment_list">
+            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}",class: :comments__name %>：</strong>
+            <%= comment.text %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 </main>

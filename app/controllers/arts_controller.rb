@@ -18,6 +18,18 @@ class ArtsController < ApplicationController
     end
   end
 
+  def show
+    @art = Art.find(params[:id])
+  end
+
+  def edit
+
+  end
+
+  def update
+
+  end
+
   private
   def art_params
     params.require(:art).permit(:title, :content, :image).merge(user_id: current_user.id)

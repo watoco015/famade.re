@@ -30,9 +30,6 @@ padding: 0 50px;
   margin: 0 130px;
 }
 
-.detail_hedding{
-  font-size: 43px;
-}
 
 .detail_content{
   font-size: 25px;
@@ -47,4 +44,15 @@ padding: 0 50px;
 
 .detail_name:hover{
   border-bottom: 2px solid #d05b12;
+}
+
+.user_first{
+  margin: 0 70px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.user_second{
+  display: flex;
+  flex-wrap: wrap;
 }

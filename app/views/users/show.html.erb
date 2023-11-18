@@ -1,0 +1,18 @@
+<div class="main">
+  <div class="inner">
+
+    <div class="user_first">
+
+      <h1 class="page-heading">
+        <%= "#{@user.nickname} さんの作品" %>
+      </h1>
+      <div class="user_second">
+        <% @arts.each do |art| %>
+          <%= render partial: "arts/art", locals: { art: art } %>
+        <% end %>
+      </div>
+
+    </div>
+
+  </div>
+</div>

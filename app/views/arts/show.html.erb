@@ -14,6 +14,17 @@
           <%= image_tag @art.image ,class: :detail_image %>
         </div>
 
+        <ul class="detail_list">
+          <% if user_signed_in? && current_user.id == @art.user_id %>
+          <li>
+            <%= link_to '編集', root_path %>
+          </li>
+          <li>
+            <%= link_to '削除', root_path %>
+          </li>
+          <% end %>
+        </ul>
+
         <div class="detail_third">
           <p class="detail_content">
             <%= @art.content %>

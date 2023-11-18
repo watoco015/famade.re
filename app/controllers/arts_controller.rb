@@ -2,7 +2,7 @@ class ArtsController < ApplicationController
   before_action :move_to_index, except: [:index]
 
   def index
-    @arts = Art.all
+    @arts = Art.all.order("created_at DESC")
   end
 
   def new

@@ -22,12 +22,20 @@ class ArtsController < ApplicationController
     @art = Art.find(params[:id])
   end
 
-  def edit
+  def destroy
+    art = Art.find(params[:id])
+    art.destroy
+    redirect_to root_path
+  end
 
+  def edit
+    @art = Art.find(params[:id])
   end
 
   def update
-
+    art = Art.find(params[:id])
+    art.update(art_params)
+    redirect_to art_path(art.id)
   end
 
   private

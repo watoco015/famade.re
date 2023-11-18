@@ -30,6 +30,19 @@ padding: 0 50px;
   margin: 0 130px;
 }
 
+.detail_list{
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 20px 15px 0;
+  font-size: 23px;
+}
+
+li:hover{
+  border-bottom: 2px solid #d05b12;
+}
 
 .detail_content{
   font-size: 25px;
@@ -55,4 +68,8 @@ padding: 0 50px;
 .user_second{
   display: flex;
   flex-wrap: wrap;
+}
+
+.edit_first{
+  text-align: center;
 }

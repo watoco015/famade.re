@@ -14,6 +14,17 @@
           <%= image_tag @art.image ,class: :detail_image %>
         </div>
 
+        <ul class="detail_list">
+          <% if user_signed_in? && current_user.id == @art.user_id %>
+          <li>
+            <%= link_to '編集', edit_art_path(@art.id) %>
+          </li>
+          <li>
+            <%= link_to '削除', art_path(@art.id), data: { turbo_method: :delete } %>
+          </li>
+          <% end %>
+        </ul>
+
         <div class="detail_third">
           <p class="detail_content">
             <%= @art.content %>

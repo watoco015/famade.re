@@ -5,9 +5,9 @@
       <div class="detail_second">
 
         <div class="detail_third">
-          <p class="detail_hedding">
+          <h1 class="page_hedding">
             <%= @art.title %>
-          </p>
+          </h1>
         </div>
 
         <div class="detail__images">
@@ -19,7 +19,7 @@
             <%= @art.content %>
           </p>
         </div>
-        <%= link_to "by #{@art.user.nickname}",root_path,class: :detail_name %>
+        <%= link_to "by #{@art.user.nickname}",user_path(@art.user),class: :detail_name %>
 
       </div>
     </div>

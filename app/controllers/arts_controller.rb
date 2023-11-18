@@ -25,8 +25,8 @@ class ArtsController < ApplicationController
   end
 
   def destroy
-    art = Art.find(params[:id])
-    art.destroy
+    @art = Art.find(params[:id])
+    @art.destroy
     redirect_to root_path
   end
 

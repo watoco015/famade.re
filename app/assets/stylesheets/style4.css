@@ -1,6 +1,6 @@
 /* コメント */
 .detail_comment{
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .detail_comments{
@@ -10,10 +10,18 @@
 
 .comment_list{
   padding-top: 20px;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .comments__name {
   color: #bc4c06;
-  font-size: 20px;
+  font-size: 21px;
+}
+
+/* お気に入り */
+.favorite{
+  width: 70px;
+  background-color: #fff;
+  border: none;
+  margin-top: 20px;
 }

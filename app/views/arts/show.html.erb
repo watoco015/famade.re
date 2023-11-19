@@ -47,12 +47,10 @@
             <%= f.submit "SEND" , class: :form__btn%>
           </div>
         <% end %>
-      <% else %>
-        <strong><h2>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</h2></strong>
       <% end %>
 
        <div class="detail_comments">
-        <h1 class="detail_comments__head">＜ コメント一覧 ＞</h1>
+        <h1 class="detail_comments__head">【 コメント一覧 】</h1>
 
         <% if @comments.present? %>
 
@@ -66,10 +64,17 @@
         <% else %>
 
           <div class="comment_list">
+            <% if user_signed_in? %>
             <strong><h4>
             ※※ まだコメントはありません ※※<br>
             コメントをしませんか？
             </h4></strong>
+            <% else %>
+            <strong><h4>
+            ※※ まだコメントはありません ※※<br>
+            </h4></strong>
+            <strong>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</strong>
+            <% end %>
           </div>
 
           <% end %>

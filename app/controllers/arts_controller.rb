@@ -1,5 +1,7 @@
 class ArtsController < ApplicationController
-  before_action :move_to_index, except: [:index]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_art, only: [:show, :edit, :destroy, :update]
+  before_action :authorize_user!, only: [:edit, :update, :destroy]
 
   def index
     @arts = Art.all.order("created_at DESC")
@@ -19,25 +21,21 @@ class ArtsController < ApplicationController
   end
 
   def show
-    @art = Art.find(params[:id])
     @comment = Comment.new
     @comments = @art.comments.includes(:user)
   end
 
   def destroy
-    art = Art.find(params[:id])
-    art.destroy
+    @art.destroy
     redirect_to root_path
   end
 
   def edit
-    @art = Art.find(params[:id])
   end
 
   def update
-    art = Art.find(params[:id])
-    art.update(art_params)
-    redirect_to art_path(art.id)
+    @art.update(art_params)
+    redirect_to art_path(@art.id)
   end
 
   private
@@ -45,10 +43,13 @@ class ArtsController < ApplicationController
     params.require(:art).permit(:title, :content, :image).merge(user_id: current_user.id)
   end
 
-  def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+  def set_art
+    @art = Art.find(params[:id])
   end
 
+  def authorize_user!
+    unless @art.user == current_user
+      redirect_to root_path
+    end
+  end
 end

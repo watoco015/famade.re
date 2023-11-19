@@ -7,9 +7,11 @@
   text-align: center;
   padding-top: 50px;
 }
-
+.detail_comments__head{
+  padding-bottom: 20px;
+}
 .comment_list{
-  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 25px;
 }
 

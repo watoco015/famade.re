@@ -60,6 +60,10 @@
               <%= link_to comment.user.nickname, " #{comment.user_id}",class: :comments__name %>
             </div>
           <% end %>
+          <% if user_signed_in? %>
+            <% else %>
+              <strong><h2>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</h2></strong>
+          <% end %>
 
         <% else %>
 

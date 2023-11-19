@@ -5,9 +5,9 @@ faMde
 https://famade-re.onrender.com
 
 # テスト用アカウント
-Basic認証パスワード：0115
-Basic認証ID：famade
-メールアドレス：test@com
+Basic認証パスワード：0115 <br>
+Basic認証ID：famade <br>
+メールアドレス：test@com <br>
 パスワード：test12
 
 # アプリケーション概要
@@ -30,19 +30,18 @@ https://docs.google.com/spreadsheets/d/1ev-SR6nSbgj1VSErYUReCavJ2lQZjOIbdHgRL82l
 
 # 実装した機能についての画像やGIFおよびその説明
 ## 作品投稿ページ
-https://gyazo.com/cff6f7f0b44e8ca2959516d7e50ef49a
+https://gyazo.com/cff6f7f0b44e8ca2959516d7e50ef49a <br>
 手軽で誰でも簡単に投稿できるように画像、タイトル、作品の内容のみの入力になっている
 
 ## 作品詳細ページ
 ### ログイン後
 https://gyazo.com/58389563a9326cec868818a11729323a
 ### ログイン前
-https://gyazo.com/c834acea99a5f618da2fcec1fc810342
-
+https://gyazo.com/c834acea99a5f618da2fcec1fc810342 <br>
 ログイン後はお気に入り機能、コメント入力欄が表示される
 
 ## お気に入り機能
-https://gyazo.com/6af1750095d2d3e36da8b815948a4543
+https://gyazo.com/6af1750095d2d3e36da8b815948a4543 <br>
 お気に入りすると色が変わり、登録済みと表示される
 
 # データベース設計
@@ -52,13 +51,13 @@ https://gyazo.com/6af1750095d2d3e36da8b815948a4543
 [![Image from Gyazo](https://i.gyazo.com/dde3685ca4daed6dc9c4f515448fd77a.png)](https://gyazo.com/dde3685ca4daed6dc9c4f515448fd77a)
 
 # 開発環境
-HTML CSS
-JavaScript
-Ruby
-Ruby on Rails
-MySQL
-VScode
-GitHub
+HTML CSS <br>
+JavaScript <br>
+Ruby <br>
+Ruby on Rails <br>
+MySQL <br>
+VScode <br>
+GitHub <br>
 
 # 実装予定の機能
 投稿時画像複数選択、お気に入りトップページ表示、コメントの削除機能

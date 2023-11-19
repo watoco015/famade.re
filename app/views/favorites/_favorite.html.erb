@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+
+  <% if art.favorited_by?(current_user) %> 
+    <p>
+      <%=button_to image_tag("favo_or.png"), art_favorites_path(art.id), method: :delete , class: :favorite%>
+      お気に入り登録済み
+    </p>
+  <% else %>
+    <p>
+      <%=button_to image_tag("favo_b.png"), art_favorites_path(art.id), method: :post , class: :favorite%>
+      お気に入り登録
+    </p>
+  <% end %>
+
+<% end %>
